@@ -21,10 +21,20 @@ password: your_rt_password
 ```
 
 Set message to be sent in message.txt file in same directory as correspond.rb script
+### message.txt example
+```
+Hi!
+
+Include your message here.
+
+Regards,
+Rhys.
+```
 
 Include tickets that should be sent correspondence in tickets.txt separated by a comma (,) in same directory as correspond.rb script
+### tickets.txt example
 ```
-e.g 31234, 41231, 53244, 90123
+31234, 41231, 53244, 90123
 ```
 
 Run the script from terminal or command prompt with: ruby oop_correspond.rb and follow the prompts
