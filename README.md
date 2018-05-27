@@ -19,10 +19,12 @@ server: http://rt.example.com
 username: your_rt_username
 password: your_rt_password
 ```
-## Set message to be sent in message.txt file in same directory as correspond.rb script
 
-## Include tickets that should be sent correspondence in tickets.txt separated by a comma (,) in same directory as correspond.rb script
+Set message to be sent in message.txt file in same directory as correspond.rb script
+
+Include tickets that should be sent correspondence in tickets.txt separated by a comma (,) in same directory as correspond.rb script
+```
 e.g 31234, 41231, 53244, 90123
+```
 
-# Run the script from terminal or command prompt with: ruby oop_correspond.rb
-## Follow the prompts
+Run the script from terminal or command prompt with: ruby oop_correspond.rb and follow the prompts
