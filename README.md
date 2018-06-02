@@ -37,4 +37,4 @@ Include tickets that should be sent correspondence in tickets.txt separated by a
 31234, 41231, 53244, 90123
 ```
 
-Run the script from terminal or command prompt with: ruby oop_correspond.rb and follow the prompts
+Run the script from terminal or command prompt with: ruby correspond.rb and follow the prompts
