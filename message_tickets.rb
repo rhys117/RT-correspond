@@ -1,9 +1,10 @@
-require_relative 'rt_core'
+require_relative 'lib/rt_core'
+require 'csv'
 
 class MessageTickets
 
   def initialize
-    get_contents_of_files
+    get_params_from_files
   end
 
   def send_all
@@ -27,8 +28,22 @@ class MessageTickets
 
     def post_correspondance
       @tickets.each do |num|
-        current = Ticket.new(num, RT)
-        current.correspond!(@message)
+        current = Ticket.new(num)
+
+        if File.file?('assets/mailmerge.csv')
+          entity_row = @csv.find { |row| row['entityid'] == current.entityid }
+          customer_name = entity_row.nil? ? 'Valued Customer' : entity_row['billing_name']
+          message = @message.dup
+          message.gsub!("{CUSTOMER_NAME}", customer_name)
+          message.gsub!('{AGENT}', USER['username'].split('.').first.capitalize)
+          current.correspond!(message)
+        else
+          message = @message.dup
+          message.gsub!("{CUSTOMER_NAME}", 'Valued Customer')
+          message.gsub!('{AGENT}', USER['username'].split('.').first.capitalize)
+          current.correspond!(message)
+        end
+
         current.status = @status
         current.owner = USER[:username] if @owner_change
         current.owner = 'Nobody' if @status == 'resolved'
@@ -36,9 +51,14 @@ class MessageTickets
       end
     end
 
-    def get_contents_of_files
-      @message = File.read('message.txt')
-      @tickets = File.read('tickets.txt').split(',').map(&:strip).map(&:to_i)
+    def get_params_from_files
+      @message = File.read('assets/message.txt')
+      @tickets = File.read('assets/tickets.txt').split(',').map(&:strip).map(&:to_i)
+
+      if File.file?('assets/mailmerge.csv')
+        csv_text = File.read('assets/mailmerge.csv')
+        @csv = CSV.parse(csv_text, :headers => true)
+      end
     end
 
     def get_new_status
@@ -113,4 +133,3 @@ class MessageTickets
 end
 
 MessageTickets.new.send_all
-delete_cookies

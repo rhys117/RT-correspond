@@ -1,3 +1,6 @@
+# Request tracker scripts
+Collection of useful scripts for workflow involving Request Tracker. 
+
 # Request Tracker Mass Ticket Correspondence Script
 This scripts aim is to provide an easy solution to deliver the same correspondence to multiple tickets at once.
 
@@ -12,16 +15,16 @@ Can be installed from terminal or command line with the following command once r
 
 # Usage
 ## Set user credentials and server location
-You should set your server, username and password to the corresponding variables in user.yml. Alternatively if not set supplied you will be prompted when running the script.
-### user.yml example
+You should set your server, username and password to the corresponding variables in a user.yml file in teh lib directory. Alternatively if not set supplied you will be prompted when running the script.
+### lib/user.yml example
 ```
 server: http://rt.example.com
 username: your_rt_username
 password: your_rt_password
 ```
 
-Set message to be sent in message.txt file in same directory as correspond.rb script
-### message.txt example
+The message you want to send should be in the assets directory as a message.txt file.
+### assets/message.txt example
 ```
 Hi!
 
@@ -31,10 +34,10 @@ Regards,
 Rhys.
 ```
 
-Include tickets that should be sent correspondence in tickets.txt separated by a comma (,) in same directory as correspond.rb script
-### tickets.txt example
+Include tickets that should be sent correspondence in the assets directory in a tickets.txt file, each ticket should be separated by a comma (,)
+### assets/tickets.txt example
 ```
 31234, 41231, 53244, 90123
 ```
 
-Run the script from terminal or command prompt with: ruby correspond.rb and follow the prompts
+Run the script from terminal or command prompt with: ruby message_tickets.rb and follow the prompts

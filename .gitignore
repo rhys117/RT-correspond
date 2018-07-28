@@ -1,5 +1,11 @@
-/rt-client-1.0.0
-/cookies
+lib/user.yml
+cookies
 
-vocus_merge_auto.rb
-test.rb
+assets/booked_appointment_email.txt
+assets/booked_appointment_lts_email.txt
+assets/booked_appointment_lts_sms.txt
+assets/booked_appointment_sms.txt
+assets/resolved_message_email.txt
+assets/resolved_message_sms.txt
+assets/two_day_warning_email.txt
+assets/two_day_warning_sms.txt

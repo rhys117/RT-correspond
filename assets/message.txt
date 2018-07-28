@@ -1,0 +1,7 @@
+Hi {CUSTOMER_NAME},
+
+Insert Message content
+
+Kind Regards,
+{AGENT}
+Support
