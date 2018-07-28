@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4c0c74a-b065-41be-994f-2eba170ce42f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/correspond.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rt_core.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_colors.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.yml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +16,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="30">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -103,12 +96,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532764872199</updated>
-      <workItem from="1532764873619" duration="14000" />
+      <workItem from="1532764873619" duration="152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14000" />
+    <option name="totallyTimeSpent" value="152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="877" extended-state="0" />
@@ -144,8 +137,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="30">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>

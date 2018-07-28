@@ -1,5 +1,6 @@
 lib/user.yml
 cookies
+.idea
 
 assets/booked_appointment_email.txt
 assets/booked_appointment_lts_email.txt
