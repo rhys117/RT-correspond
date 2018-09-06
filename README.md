@@ -1,3 +1,5 @@
+This readme is no longer current. 
+
 # Request tracker scripts
 Collection of useful scripts for workflow involving Request Tracker. 
 
